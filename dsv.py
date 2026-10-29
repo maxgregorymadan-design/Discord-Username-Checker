@@ -29,7 +29,7 @@ integ_0 = 0
 sys_url = "https://discord.com/api/v9/users/@me"
 URL = "https://discord.com/api/v9/users/@me/pomelo-attempt"
 def s_sys_h():
-   if configur.getboolean("sys","MULTI_TOKEN") == False:
+   if configur.getboolean("sys","MULTI_TOKEN") == True:
       return {
     "Content-Type": "Application/json",
     "Orgin": "https://discord.com/",
@@ -79,7 +79,7 @@ def setconf():
    global sat_multi_token
    global sat_punct
    global sat_webhook
-  sat_webhook = configur.get("sys","WEBHOOK_URL")
+   sat_webhook = configur.get("sys","WEBHOOK_URL")
    sat_string = configur.getboolean("config","string")
    sat_digits = configur.getboolean("config","digits")
    sat_punct = configur.getboolean("config","punctuation")
