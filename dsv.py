@@ -79,7 +79,7 @@ def setconf():
    global sat_multi_token
    global sat_punct
    global sat_webhook
-   sat_webhook = configur.get("sys","https://discord.com/api/webhooks/1564826662363861025/fpbmL9u9safSkmANrZOSh0MC6MPGbCmQhsJ_5cEoKVkfolTYeWf86Vniw1iJOD6NWc1F")
+  sat_webhook = configur.get("sys","WEBHOOK_URL")
    sat_string = configur.getboolean("config","string")
    sat_digits = configur.getboolean("config","digits")
    sat_punct = configur.getboolean("config","punctuation")
