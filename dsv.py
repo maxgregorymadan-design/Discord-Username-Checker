@@ -117,7 +117,9 @@ def setconf():
 
 def main():
     sys_c_t()
-    os.system(f"title {__version__} - Connected as {requests.get(sys_url,headers=s_sys_h()).json()['username']}")
+   response = requests.get(sys_url, headers=s_sys_h())
+print("Status:", response.status_code)
+print("Response:", response.text)
     s_sys_h()
     setconf()    
     print(f"""{Fore.LIGHTYELLOW_EX}
