@@ -29,7 +29,7 @@ integ_0 = 0
 sys_url = "https://discord.com/api/v9/users/@me"
 URL = "https://discord.com/api/v9/users/@me/pomelo-attempt"
 def s_sys_h():
-   if configur.getboolean("sys","MULTI_TOKEN") == True:
+   if configur.getboolean("sys","MULTI_TOKEN") == False:
       return {
     "Content-Type": "Application/json",
     "Orgin": "https://discord.com/",
