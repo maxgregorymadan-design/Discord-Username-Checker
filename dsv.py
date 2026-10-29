@@ -79,6 +79,7 @@ def setconf():
    global sat_multi_token
    global sat_punct
    global sat_webhook
+   
    sat_webhook = configur.get("sys","WEBHOOK_URL")
    sat_string = configur.getboolean("config","string")
    sat_digits = configur.getboolean("config","digits")
